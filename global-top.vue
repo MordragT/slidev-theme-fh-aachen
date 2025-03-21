@@ -1,0 +1,4 @@
+<template>
+    <Bar />
+    <Pagination />
+</template>
