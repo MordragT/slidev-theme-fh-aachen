@@ -1,4 +1,4 @@
 <template>
-    <Bar />
+    <Logo />
     <Pagination />
 </template>

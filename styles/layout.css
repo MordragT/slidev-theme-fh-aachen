@@ -13,7 +13,7 @@
     color: var(--slidev-theme-primary);
   }
 
-  background-image: url("bg.svg");
+  background-image: url("../assets/bg.svg");
 }
 
 .slidev-layout.cover,
@@ -45,9 +45,9 @@
 .slidev-layout.section {
   @apply flex flex-col justify-center ml-20;
 
-  background-image: url("bg.svg")
+  background-image: url("../assets/bg.svg")
 }
 
 .slidev-layout.end {
-  background-image: url("bg-alt.svg")
+  background-image: url("../assets/bg-alt.svg")
 }
