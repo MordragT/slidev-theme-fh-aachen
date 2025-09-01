@@ -2,10 +2,48 @@
   /* default theme color */
   /* can be overrided by uses `themeConfig` option */
   --slidev-theme-primary: #00b5ad;
+  --slidev-code-font-size: 1.25rem;
+  --slidev-code-line-height: 1.875rem;
 }
 
 .slidev-layout {
   margin-left: 5%;
+
+  h1 {
+    @apply text-6xl leading-20;
+  }
+
+  h2 {
+    @apply text-5xl leading-18;
+  }
+
+  h3 {
+    @apply text-4xl leading-16;
+  }
+
+  h4 {
+    @apply text-3xl leading-14;
+  }
+
+  /* h1+h2,
+  h2+h3,
+  h3+h4,
+  h4+h5,
+  h5+h6 {
+    @apply -mt-4
+  } */
+
+  p {
+    @apply text-3xl;
+  }
+
+  ul {
+    @apply text-3xl;
+  }
+
+  li {
+    @apply text-3xl;
+  }
 }
 
 .slidev-layout.intro {
@@ -16,13 +54,13 @@
   background-image: url("../assets/bg.svg");
 }
 
+.slidev-layout.end {
+  background-image: url("../assets/bg-alt.svg")
+}
+
 .slidev-layout.cover,
 .slidev-layout.intro {
   @apply h-full grid;
-
-  h1 {
-    @apply text-6xl leading-20;
-  }
 
   h1+p {
     @apply -mt-2 opacity-50 mb-4;
@@ -35,19 +73,9 @@
   }
 }
 
-.slidev-layout.section {
-  h1 {
-    @apply text-5xl;
-  }
-}
-
 .slidev-layout.quote,
 .slidev-layout.section {
   @apply flex flex-col justify-center ml-20;
 
   background-image: url("../assets/bg.svg")
-}
-
-.slidev-layout.end {
-  background-image: url("../assets/bg-alt.svg")
 }
